@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryuzaki</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Ryuzaki</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span style="color: var(--primary-color);">Ryuzaki</span></h1>
+            <p class="subtitle">Full Stack Developer</p>
+            <p class="description">
+                Membuat website yang menarik dan mudah digunakan.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    seorang pelajar SMP yang sedang belajar tentang pemrograman dan desain web.
+                </p>
+                <p style="margin-top: 1rem;">
+                    jika kamu ingin mengetahui lebih lanjut tentang saya, kamu bisa scroll ke bawah.
+                </p>
+            </div>
+            <div class="about-image">
+                👨‍💻
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Frontend</h3>
+                <ul class="skill-list">
+                    <li>HTML5 & CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Backend</h3>
+                <ul class="skill-list">
+                    <li>Python ( sedikit )</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & Others</h3>
+                <ul class="skill-list">
+                    <li>Git & GitHub</li>
+                    <li>VsCode</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">📱</div>
+                <div class="project-content">
+                    <h3>Task Management App</h3>
+                    <p>Website dimana saya dapat mengatur tugas-tugas yang perlu saya kerjakan.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ryvjpg.github.io/Task-Management/">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Website ini adalah portfolio saya yang menampilkan project-project yang pernah saya kerjakan.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ryvjpg.github.io/ryuzaki-portfolio-frontend/">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                Kamu bisa hubungi saya melalui dengan dibawah ini.
+            </p>
+            <form class="contact-form">
+                <div id="form-message" style="display: none; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; text-align: center;"></div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/ryvJpg" aria-label="GitHub">GitHub</a>
+            <a href="https://lynk.id/ryv" aria-label="Lynkid">Lynkid</a>
+        </div>
+        <p>&copy; 2024 Ryuzaki. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
